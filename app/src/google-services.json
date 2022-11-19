@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "127015823450",
+    "project_id": "seniordesignstockman",
+    "storage_bucket": "seniordesignstockman.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127015823450:android:fdf38dfbfb4664d818d063",
+        "android_client_info": {
+          "package_name": "com.example.seniordesignstockman"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127015823450-ublic8vjtth90vqmaujasvuc6brtr21b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlbLWh25RBA-KI5gIOdtcEr-1WvPIlZdI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127015823450-ublic8vjtth90vqmaujasvuc6brtr21b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
