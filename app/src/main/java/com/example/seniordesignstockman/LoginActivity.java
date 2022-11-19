@@ -42,7 +42,7 @@ public class LoginActivity extends AppCompatActivity {
         passwordreset = findViewById(R.id.forgotPassword);
         passwordresetemail = findViewById(R.id.emailSignIn);
         progressBar = (ProgressBar) findViewById(R.id.progressBars);
-        progressBar.setVisibility(View.GONE);
+        progressBar.setVisibility(View.INVISIBLE);
         auth = FirebaseAuth.getInstance();
         processDialog = new ProgressDialog(this);
 

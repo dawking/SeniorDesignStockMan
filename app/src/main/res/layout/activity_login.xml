@@ -12,71 +12,80 @@
 
     <EditText
         android:id="@+id/emailSignIn"
-        android:layout_width="match_parent"
+        android:layout_width="335dp"
         android:layout_height="48dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="-65dp"
 
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="-65dp"
         android:autofillHints=""
         android:background="#11000000"
         android:ems="10"
-        android:hint="@string/username"
+        android:hint="      Kullanıcı Adı"
         android:inputType="textEmailAddress"
-        android:textColor="#fff"
+        android:textAlignment="center"
+        android:textColor="#EC407A"
         android:textColorHint="#546E7A"
-        android:textSize="16sp" />
-
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/password"
 
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_alignBottom="@+id/emailSignIn"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="55dp"
-        android:layout_marginBottom="-63dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="-59dp"
         android:autofillHints=""
         android:background="#11000000"
+
         android:ems="10"
-        android:hint="@string/password"
+        android:hint="      Parola"
         android:inputType="textPassword"
-
-
-        android:textColor="#fff"
+        android:textAlignment="center"
+        android:textColor="#EC407A"
         android:textColorHint="#546E7A" />
 
     <Button
         android:id="@+id/login"
         android:layout_width="match_parent"
-        android:layout_height="15dp"
+        android:layout_height="83dp"
         android:layout_below="@+id/password"
-        android:layout_alignBottom="@+id/password"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="79dp"
-        android:layout_marginBottom="-94dp"
+
+
+        android:layout_marginTop="77dp"
+        android:layout_marginBottom="-81dp"
         android:background="#172196F3"
-        android:text="@string/login"
+        android:text=" Giriş yap"
         android:textColor="#EC407A"
         android:textSize="20sp" />
 
     <TextView
         android:id="@+id/forgotPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/progressBars"
-        android:layout_alignBottom="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="147dp"
-        android:layout_marginTop="218dp"
-        android:layout_marginEnd="147dp"
-        android:layout_marginBottom="-337dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="523dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="43dp"
         android:clickable="true"
         android:focusable="true"
-        android:minHeight="48dp"
-        android:text="@string/forgot_password"
+        android:text="Parolamı Unuttum"
         android:textColor="#757575" />
 
     <ProgressBar
@@ -85,7 +94,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/login"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="-81dp" />
+        android:layout_marginBottom="-97dp" />
 
 
 </RelativeLayout>
