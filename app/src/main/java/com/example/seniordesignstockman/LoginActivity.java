@@ -46,6 +46,10 @@ public class LoginActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         processDialog = new ProgressDialog(this);
 
+
+
+
+
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
 
@@ -56,18 +60,31 @@ public class LoginActivity extends AppCompatActivity {
                 } catch (Exception e) {
 
                 }
-                validate(eMail.getText().toString(), Password.getText().toString());
+                try {
+                    validate(eMail.getText().toString(), Password.getText().toString());
+                }
+                catch (Exception e){
+                    Toast.makeText(LoginActivity.this, "Gerekli Alanlar Boş", Toast.LENGTH_SHORT).show();
+
+                }
+
             }
         });
 
         passwordreset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 resetPasword();
             }
         });
 
+
+
+
     }
+
+
     public void resetPasword(){
         final String resetemail = passwordresetemail.getText().toString();
 
@@ -93,7 +110,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void validate(String userEmail, String userPassword){
 
-        processDialog.setMessage("................Please Wait.............");
+        processDialog.setMessage(".............Lütfen Bekleyin..........");
         processDialog.show();
 
         auth.signInWithEmailAndPassword(userEmail, userPassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -101,11 +118,11 @@ public class LoginActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     processDialog.dismiss();
-                    Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Giriş BAŞARILI!", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(LoginActivity.this, MainActivity.class));
                 }
                 else{
-                    Toast.makeText(LoginActivity.this,"Login Failed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this,"Giriş BAŞARISIZ!", Toast.LENGTH_SHORT).show();
                     processDialog.dismiss();
                 }
             }

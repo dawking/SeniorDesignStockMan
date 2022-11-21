@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (user!=null){
             finish();
-            Toast.makeText(this, "Oldu giris", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Giriş Yapıldı", Toast.LENGTH_LONG).show();
             //startActivity(new Intent(this, dashboardActivity.class));
         }
 
@@ -31,6 +31,6 @@ public class MainActivity extends AppCompatActivity {
     public void login (View view)
     {
         startActivity(new Intent(this,LoginActivity.class));
-//
+
     }
 }

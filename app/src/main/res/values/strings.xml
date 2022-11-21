@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SeniorDesignStockMan</string>
+    <string name="app_name">Stock app</string>
     <string name="login">Login</string>
     <string name="forgot_password">Forgot Password ?</string>
     <string name="password">Password</string>

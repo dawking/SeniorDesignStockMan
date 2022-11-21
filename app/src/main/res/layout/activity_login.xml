@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context=".LoginActivity"
-    android:orientation="vertical" >
+    android:background="#45AFA9BD"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
 
 
     <EditText
@@ -24,9 +24,9 @@
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="-65dp"
         android:autofillHints=""
-        android:background="#11000000"
+        android:background="@drawable/gradient"
         android:ems="10"
-        android:hint="      Kullanıcı Adı"
+        android:hint="Kullanıcı Adı"
         android:inputType="textEmailAddress"
         android:textAlignment="center"
         android:textColor="#EC407A"
@@ -35,7 +35,7 @@
 
     <EditText
         android:id="@+id/password"
-
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_alignBottom="@+id/emailSignIn"
@@ -46,10 +46,11 @@
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="-59dp"
         android:autofillHints=""
-        android:background="#11000000"
 
+
+        android:background="@drawable/gradient"
         android:ems="10"
-        android:hint="      Parola"
+        android:hint="Parola"
         android:inputType="textPassword"
         android:textAlignment="center"
         android:textColor="#EC407A"
@@ -57,34 +58,47 @@
 
     <Button
         android:id="@+id/login"
-        android:layout_width="match_parent"
-        android:layout_height="83dp"
-        android:layout_below="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
 
 
-        android:layout_marginTop="77dp"
-        android:layout_marginBottom="-81dp"
-        android:background="#172196F3"
-        android:text=" Giriş yap"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="402dp"
+        android:background="@drawable/button"
+        android:text="Giriş yap"
+
+        android:textAlignment="center"
         android:textColor="#EC407A"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+
+        app:rippleColor="#401010" />
 
     <TextView
         android:id="@+id/forgotPassword"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
 
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
         android:layout_marginStart="145dp"
-        android:layout_marginTop="523dp"
-        android:layout_marginEnd="111dp"
-        android:layout_marginBottom="43dp"
+        android:layout_marginTop="522dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="59dp"
+        android:background="@drawable/button"
         android:clickable="true"
         android:focusable="true"
+        android:gravity="center"
         android:text="Parolamı Unuttum"
         android:textColor="#757575" />
 
@@ -92,9 +106,14 @@
         android:id="@+id/progressBars"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/login"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="-97dp" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="249dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="306dp" />
 
 
 </RelativeLayout>
