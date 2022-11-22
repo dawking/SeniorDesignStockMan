@@ -29,7 +29,7 @@
         android:background="@drawable/gradient"
         android:drawableLeft="@drawable/ic_account_user"
         android:ems="10"
-        android:hint="Email"
+        android:hint="E-Posta"
         android:inputType="textPersonName"
         android:textColor="#fff"
         android:textColorHint="#ffff"
@@ -46,7 +46,7 @@
         android:background="@drawable/gradient"
         android:drawableLeft="@drawable/ic_password"
         android:ems="10"
-        android:hint="Password"
+        android:hint="Parola"
         android:inputType="textPassword"
         android:textColor="#fff"
         android:textColorHint="#ffff" />
@@ -62,7 +62,7 @@
         android:background="@drawable/gradient"
         android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
         android:ems="10"
-        android:hint="Confirm Password"
+        android:hint="Parola Tekrar"
         android:inputType="textPassword"
         android:textColor="#fff"
         android:textColorHint="#ffff" />
@@ -77,7 +77,7 @@
         android:background="@drawable/gradient"
         android:drawableLeft="@drawable/ic_forum_black_24dp"
         android:ems="10"
-        android:hint="Department Name"
+        android:hint="Birim Adı"
         android:inputType="textPersonName"
         android:textColor="#fff"
         android:textColorHint="#ffff"
@@ -94,7 +94,7 @@
         android:layout_marginBottom="-81dp"
         android:background="@drawable/gradient"
         android:minHeight="48dp"
-        android:text="Sign Up"
+        android:text="Kayıt Ol"
         android:textColor="#FFFF"
         android:textSize="20dp" />
 
