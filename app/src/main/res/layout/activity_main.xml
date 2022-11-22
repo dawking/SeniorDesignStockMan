@@ -49,7 +49,7 @@
         android:background="@drawable/button"
         android:hint="Register"
         android:textColor="@color/purple_700"
-
+        android:onClick="register"
         android:textColorHint="#FFFF"
         android:textSize="18dp" />
 </RelativeLayout>
