@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         if (user!=null){
             finish();
             Toast.makeText(this, "Giriş Yapıldı", Toast.LENGTH_LONG).show();
-            //startActivity(new Intent(this, dashboardActivity.class));
+            startActivity(new Intent(this, dashboardActivity.class));
         }
 
 
