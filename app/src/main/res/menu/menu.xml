@@ -9,9 +9,10 @@
             <item
                 android:id="@+id/logoutMenu"
                 android:orderInCategory="300"
-                android:title="Logout"
+                android:title="Çıkış Yap"
                 android:icon="@drawable/ic_lock_open_blue_24dp"
-                app:showAsAction="collapseActionView">
+                app:showAsAction="collapseActionView"
+                >
 
             </item>
 

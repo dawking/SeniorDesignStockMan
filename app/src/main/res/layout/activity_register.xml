@@ -6,12 +6,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".RegisterActivity"
-    android:background="#45AFA9BD">
+    android:background="#45AFA9BD"
+    android:id="@+id/rellayout">
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="236dp"
-        android:layout_height="190dp"
+        android:layout_width="271dp"
+        android:layout_height="236dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="22dp"
@@ -19,41 +20,26 @@
 
     <EditText
         android:id="@+id/emailRegister"
-        android:layout_width="200dp"
+        android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_alignTop="@+id/imageView3"
 
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="304dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="261dp"
+        android:layout_marginEnd="55dp"
         android:layout_marginBottom="-65dp"
         android:background="@drawable/gradient"
         android:drawableLeft="@drawable/ic_account_user"
         android:ems="10"
-        android:hint="E-Posta"
+        android:hint="  E-Mail"
         android:inputType="textPersonName"
         android:textColor="#fff"
         android:textColorHint="#ffff"
         android:textSize="16dp" />
 
     <EditText
-        android:id="@+id/passwordRegister"
-        android:layout_width="200dp"
-        android:layout_height="40dp"
-        android:layout_alignBottom="@+id/emailRegister"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp"
-        android:layout_marginBottom="-50dp"
-        android:background="@drawable/gradient"
-        android:drawableLeft="@drawable/ic_password"
-        android:ems="10"
-        android:hint="Parola"
-        android:inputType="textPassword"
-        android:textColor="#fff"
-        android:textColorHint="#ffff" />
-
-    <EditText
         android:id="@+id/confirmPassword"
-        android:layout_width="200dp"
+        android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_alignBottom="@+id/passwordRegister"
         android:layout_centerHorizontal="true"
@@ -62,14 +48,14 @@
         android:background="@drawable/gradient"
         android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
         android:ems="10"
-        android:hint="Parola Tekrar"
+        android:hint="  Parola Tekrar"
         android:inputType="textPassword"
         android:textColor="#fff"
         android:textColorHint="#ffff" />
 
     <EditText
         android:id="@+id/departmentName"
-        android:layout_width="200dp"
+        android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_alignBottom="@id/confirmPassword"
         android:layout_centerHorizontal="true"
@@ -77,7 +63,7 @@
         android:background="@drawable/gradient"
         android:drawableLeft="@drawable/ic_forum_black_24dp"
         android:ems="10"
-        android:hint="Birim Adı"
+        android:hint="  Birim Adı"
         android:inputType="textPersonName"
         android:textColor="#fff"
         android:textColorHint="#ffff"
@@ -85,18 +71,34 @@
 
     <Button
         android:id="@+id/button_register"
-        android:layout_width="200dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/departmentName"
 
         android:layout_centerInParent="true"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="-81dp"
+        android:layout_marginBottom="-63dp"
         android:background="@drawable/gradient"
         android:minHeight="48dp"
         android:text="Kayıt Ol"
-        android:textColor="#FFFF"
-        android:textSize="20dp" />
+        android:textColor="#63ac7e"
+        android:textSize="29dp" />
+
+    <EditText
+        android:id="@+id/passwordRegister"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/emailRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="-49dp"
+        android:background="@drawable/gradient"
+        android:drawableLeft="@drawable/ic_password"
+        android:ems="10"
+        android:hint="  Parola"
+        android:inputType="textPassword"
+        android:textColor="#fff"
+        android:textColorHint="#ffff" />
 
     <ProgressBar
         android:id="@+id/progressbar"

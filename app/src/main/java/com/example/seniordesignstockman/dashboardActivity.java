@@ -89,7 +89,7 @@ public class dashboardActivity extends AppCompatActivity implements View.OnClick
         firebaseAuth.signOut();
         finish();
         startActivity(new Intent(dashboardActivity.this,LoginActivity.class));
-        Toast.makeText(dashboardActivity.this,"LOGOUT SUCCESSFUL", Toast.LENGTH_SHORT).show();
+        Toast.makeText(dashboardActivity.this,"Çıkış Başarılı", Toast.LENGTH_SHORT).show();
 
     }
 
@@ -111,4 +111,8 @@ public class dashboardActivity extends AppCompatActivity implements View.OnClick
     }
 
 
+    @Override
+    public void onClick(View view) {
+
+    }
 }

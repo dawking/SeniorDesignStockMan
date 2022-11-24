@@ -19,16 +19,16 @@
             android:id="@+id/firebasename"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="5dp"
             android:layout_marginTop="28dp"
             android:layout_marginBottom="60dp"
 
-            android:text="Welcome,"
-            android:textColor="#FFE082"
-            android:textSize="40sp"
-            android:textStyle="bold" />
+            android:text="Merhaba,"
+            android:textColor="#e57e10"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            />
 
 
 
@@ -52,6 +52,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/addItems"
                 android:layout_width="0dp"
+
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
@@ -72,17 +73,18 @@
 
                         android:layout_width="85dp"
                         android:layout_height="85dp"
-
+                        android:background="@drawable/add"
 
                         android:contentDescription="@string/todo" />
-                    <TextView
-                        android:layout_marginTop="10dp"
 
+                    <TextView
                         android:layout_width="wrap_content"
+
                         android:layout_height="wrap_content"
-                        android:textStyle="bold"
-                        android:text="Add Product"
-                        android:textSize="17sp"/>
+                        android:layout_marginTop="10dp"
+                        android:text="Ürün Ekle"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
 
 
 
@@ -112,20 +114,21 @@
 
                     <ImageView
 
-                        android:layout_width="85dp"
-                        android:layout_height="85dp"
+                        android:layout_width="95dp"
+                        android:layout_height="95dp"
                         android:layout_marginLeft="11dp"
-
+                        android:background="@drawable/delete"
                         android:padding="10dp"
 
                         tools:ignore="ImageContrastCheck" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textStyle="bold"
-                        android:text="Delete Product"
+                        android:text="Ürün Sil"
+                        android:textAlignment="center"
                         android:textSize="17dp"
-                        />
+                        android:textStyle="bold" />
 
 
                 </LinearLayout>
@@ -159,7 +162,7 @@
 
                         android:layout_width="85dp"
                         android:layout_height="85dp"
-
+                        android:background="@drawable/search"
                         />
 
                     <TextView
@@ -167,8 +170,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
-                        android:text="@string/view_product"
-                        android:textSize="17dp"/>
+                        android:text="Ürün Görüntüle"
+                        android:textSize="17sp"/>
 
 
                 </LinearLayout>
@@ -202,7 +205,7 @@
                         android:layout_marginStart="14dp"
 
                         android:contentDescription="TODO"
-
+                        android:background="@drawable/inventorylook"
                         tools:ignore="ImageContrastCheck" />
 
                     <TextView
@@ -210,7 +213,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
-                        android:text="@string/view_inventory"
+                        android:textAlignment="center"
+                        android:text="Stok Görüntüle"
                         android:textSize="17sp"/>
 
 

@@ -2,52 +2,43 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rellayoutlogin"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:background="#45AFA9BD"
     android:orientation="vertical"
     tools:context=".LoginActivity">
 
 
-    <EditText
-        android:id="@+id/emailSignIn"
-        android:layout_width="335dp"
-        android:layout_height="48dp"
+    <Button
+        android:id="@+id/login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
 
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
 
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="-65dp"
-        android:autofillHints=""
-        android:background="@drawable/gradient"
-        android:ems="10"
-        android:hint="Kullanıcı Adı"
-        android:inputType="textEmailAddress"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="238dp"
+        android:background="@drawable/button"
+        android:text="Giriş yap"
         android:textAlignment="center"
-        android:textColor="#EC407A"
-        android:textColorHint="#546E7A"
-        android:textSize="20sp" />
+        android:textColor="#63ac7e"
+        android:textSize="29dp"
+        app:rippleColor="#401010" />
 
     <EditText
         android:id="@+id/password"
         style="@style/Widget.AppCompat.AutoCompleteTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_alignBottom="@+id/emailSignIn"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="55dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="-59dp"
+        android:layout_width="300dp"
+        android:layout_height="49dp"
+
+
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="302dp"
         android:autofillHints=""
-
-
         android:background="@drawable/gradient"
         android:ems="10"
         android:hint="Parola"
@@ -56,64 +47,56 @@
         android:textColor="#EC407A"
         android:textColorHint="#546E7A" />
 
-    <Button
-        android:id="@+id/login"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_alignParentStart="true"
+    <EditText
+        android:id="@+id/emailSignIn"
+        android:layout_width="300dp"
+        android:layout_height="49dp"
 
-
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="402dp"
-        android:background="@drawable/button"
-        android:text="Giriş yap"
-
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="362dp"
+        android:autofillHints=""
+        android:background="@drawable/gradient"
+        android:ems="10"
+        android:hint="E-Mail"
+        android:inputType="textEmailAddress"
         android:textAlignment="center"
         android:textColor="#EC407A"
-        android:textSize="20sp"
-
-        app:rippleColor="#401010" />
+        android:textColorHint="#546E7A"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/forgotPassword"
-        android:layout_width="wrap_content"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
 
 
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="145dp"
-        android:layout_marginTop="522dp"
-        android:layout_marginEnd="145dp"
-        android:layout_marginBottom="59dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="122dp"
         android:background="@drawable/button"
         android:clickable="true"
         android:focusable="true"
-        android:gravity="center"
+        android:textAlignment="center"
         android:text="Parolamı Unuttum"
-        android:textColor="#757575" />
+        android:textColor="#757575"
+        android:visibility="visible" />
 
     <ProgressBar
         android:id="@+id/progressBars"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="181dp"
-        android:layout_marginTop="249dp"
-        android:layout_marginEnd="181dp"
-        android:layout_marginBottom="306dp" />
+        android:layout_centerInParent="true"
+        android:layout_marginStart="183dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginBottom="342dp" />
 
 
 </RelativeLayout>
