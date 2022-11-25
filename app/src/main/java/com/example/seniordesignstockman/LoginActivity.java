@@ -8,6 +8,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
@@ -69,7 +71,49 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
+        eMail.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                if (eMail.getText().length() > 24 ){
+                    eMail.setTextSize(15);
+                }
+                else {
+                    eMail.setTextSize(20);
+                }
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+      Password.addTextChangedListener(new TextWatcher() {
+          @Override
+          public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+          }
+
+          @Override
+          public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+              if (Password.getText().length() > 24 ){
+                  Password.setTextSize(15);
+              }
+              else{
+                  Password.setTextSize(20);
+              }
+          }
+
+          @Override
+          public void afterTextChanged(Editable editable) {
+
+          }
+      });
         passwordreset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -63,6 +63,7 @@
         android:background="@drawable/gradient"
         android:ems="10"
         android:hint="E-Mail"
+
         android:inputType="textEmailAddress"
         android:textAlignment="center"
         android:textColor="#EC407A"

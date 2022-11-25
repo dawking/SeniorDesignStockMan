@@ -13,21 +13,34 @@
         android:id="@+id/imageView3"
         android:layout_width="271dp"
         android:layout_height="236dp"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp"
+        android:layout_marginBottom="335dp"
         app:srcCompat="@drawable/inventory" />
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="65dp"
+        android:background="@drawable/gradient"
+        android:minHeight="48dp"
+        android:text="Kayıt Ol"
+        android:textColor="#63ac7e"
+        android:textSize="29dp" />
 
     <EditText
         android:id="@+id/emailRegister"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_alignTop="@+id/imageView3"
 
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="261dp"
-        android:layout_marginEnd="55dp"
-        android:layout_marginBottom="-65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="282dp"
         android:background="@drawable/gradient"
         android:drawableLeft="@drawable/ic_account_user"
         android:ems="10"
@@ -41,10 +54,10 @@
         android:id="@+id/confirmPassword"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_alignBottom="@+id/passwordRegister"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="22dp"
-        android:layout_marginBottom="-50dp"
+        android:layout_marginBottom="181dp"
         android:background="@drawable/gradient"
         android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
         android:ems="10"
@@ -57,9 +70,9 @@
         android:id="@+id/departmentName"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_alignBottom="@id/confirmPassword"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="-56dp"
+        android:layout_marginBottom="127dp"
         android:background="@drawable/gradient"
         android:drawableLeft="@drawable/ic_forum_black_24dp"
         android:ems="10"
@@ -69,29 +82,14 @@
         android:textColorHint="#ffff"
         android:textSize="18dp" />
 
-    <Button
-        android:id="@+id/button_register"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/departmentName"
-
-        android:layout_centerInParent="true"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="-63dp"
-        android:background="@drawable/gradient"
-        android:minHeight="48dp"
-        android:text="Kayıt Ol"
-        android:textColor="#63ac7e"
-        android:textSize="29dp" />
-
     <EditText
         android:id="@+id/passwordRegister"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_alignBottom="@+id/emailRegister"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="22dp"
-        android:layout_marginBottom="-49dp"
+        android:layout_marginBottom="231dp"
         android:background="@drawable/gradient"
         android:drawableLeft="@drawable/ic_password"
         android:ems="10"
