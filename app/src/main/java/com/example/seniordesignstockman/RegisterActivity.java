@@ -193,6 +193,12 @@ public class RegisterActivity extends AppCompatActivity {
 
 
 
+    public void onBackPressed() {
+        // TODO Auto-generated method stub
+        super.onBackPressed();
+        this.overridePendingTransition(R.anim.fade_in,
+                R.anim.fade_out);
+    }
 
 
 

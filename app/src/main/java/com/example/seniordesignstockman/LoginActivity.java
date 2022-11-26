@@ -2,6 +2,7 @@ package com.example.seniordesignstockman;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -31,7 +32,7 @@ public class LoginActivity extends AppCompatActivity {
     private TextView passwordreset;
     private EditText passwordresetemail;
     private ProgressBar progressBar;
-    private RelativeLayout relativeLayout;
+    private ConstraintLayout relativeLayout;
     private FirebaseAuth auth;
     private ProgressDialog processDialog;
 
@@ -131,8 +132,15 @@ public class LoginActivity extends AppCompatActivity {
         });
 
 
-    }
 
+    }
+    @Override
+    public void onBackPressed() {
+        // TODO Auto-generated method stub
+        super.onBackPressed();
+        this.overridePendingTransition(R.anim.fade_in,
+                R.anim.fade_out);
+    }
 
     public void resetPasword() {
         final String resetemail = passwordresetemail.getText().toString();

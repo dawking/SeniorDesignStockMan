@@ -1,61 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    android:background="@drawable/bgtry"
     android:orientation="vertical"
-    android:background="#45AFA9BD"
-    >
+    tools:context=".MainActivity">
 
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="45dp"
-        android:layout_marginEnd="45dp"
-        android:layout_marginBottom="393dp"
+        android:layout_marginTop="199dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="26dp"
         android:gravity="center"
+        android:fontFamily="@font/opensansbold"
         android:text="Stok Takip"
-        android:textColor="#666"
+        android:textColor="#F1F1F1"
         android:textSize="50sp"
-        android:textStyle="bold" />
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/LoginButtonMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/SignUpMain"
-        android:layout_width="300dp"
-        android:layout_height="70dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="30dp"
-        android:layout_marginBottom="215dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="216dp"
         android:background="@drawable/button"
         android:hint="Kayıt Ol"
         android:onClick="register"
         android:textColor="@color/purple_700"
-        android:textColorHint="#c75450"
-        android:textSize="29dp" />
+        android:textColorHint="#FF4E5250"
+        android:textSize="29dp"
+        android:fontFamily="@font/opensansbold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginButtonMain" />
 
     <Button
         android:id="@+id/LoginButtonMain"
-        android:layout_width="300dp"
-        android:layout_height="70dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
 
-
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="296dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="11dp"
         android:background="@drawable/button"
+        android:fontFamily="@font/opensansbold"
         android:hint="Giriş Yap"
         android:onClick="login"
-        android:textColorHint="#63ac7e"
-        android:textSize="29dp" />
+        android:textColorHint="#4E5250"
+        android:textSize="29dp"
+        app:layout_constraintBottom_toTopOf="@+id/SignUpMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

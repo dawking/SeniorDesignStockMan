@@ -31,10 +31,12 @@ public class MainActivity extends AppCompatActivity {
     public void login (View view)
     {
         startActivity(new Intent(this,LoginActivity.class));
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
 
     }
     public void register (View view){
         startActivity(new Intent(this,RegisterActivity.class));
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
 
     }
 }
