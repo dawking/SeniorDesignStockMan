@@ -88,7 +88,7 @@ public class dashboardActivity extends AppCompatActivity implements View.OnClick
 
 
 
-    // logout below
+
     public void Logout()
     {
         firebaseAuth.signOut();
