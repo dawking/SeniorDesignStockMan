@@ -1,7 +1,6 @@
 package com.example.seniordesignstockman;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,7 +21,8 @@ public class dashboardActivity extends AppCompatActivity implements View.OnClick
     Button toast;
 
 
-    private CardView addItems, deleteItems, scanItems, viewInventory;
+    private ImageView addItems, deleteItems, scanItems, viewInventory, logout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,47 +45,51 @@ public class dashboardActivity extends AppCompatActivity implements View.OnClick
 //            }
 //        });
 
-
-        addItems = (CardView)findViewById(R.id.addItems);
-        deleteItems = (CardView) findViewById(R.id.deleteItems);
-        scanItems = (CardView) findViewById(R.id.scanItems);
-        viewInventory = (CardView) findViewById(R.id.viewInventory);
+        logout = findViewById(R.id.logoutimg);
+        addItems = findViewById(R.id.addItems);
+        deleteItems =  findViewById(R.id.deleteItems);
+        scanItems =  findViewById(R.id.scanItems);
+        viewInventory =  findViewById(R.id.viewInventory);
 
         addItems.setOnClickListener(this);
         deleteItems.setOnClickListener(this);
         scanItems.setOnClickListener(this);
         viewInventory.setOnClickListener(this);
+        logout.setOnClickListener(this);
     }
 
-
-    /*@Override
+    @Override
     public void onClick(View view) {
         Intent i;
-
+        if(view.findViewById(R.id.logoutimg) == view){Logout();
+        }
         switch (view.getId()){
-             case R.id.addItems : i = new Intent(this,additemActivity.class);
+             case R.id.addItems : i = new Intent(this,LoginActivity.class);
                 startActivity(i);
                 break;
-            case R.id.deleteItems : i = new Intent(this,deleteItemsActivity.class);
+            case R.id.deleteItems : i = new Intent(this,LoginActivity.class);
                 startActivity(i);
                 break;
-            case R.id.scanItems : i = new Intent(this,scanItemsActivity.class);
-                (i);
+            case R.id.scanItems : i = new Intent(this,LoginActivity.class);
+               startActivity(i);
                 break;
-            case R.id.viewInventory : i = new Intent(this,viewInventoryActivity.class);
+            case R.id.viewInventory : i = new Intent(this,LoginActivity.class);
                 startActivity(i);
                 break;
             default:
                 break;
+
         }
-    }*/
+
+
+    }
 
 
 
 
 
     // logout below
-    private void Logout()
+    public void Logout()
     {
         firebaseAuth.signOut();
         finish();
@@ -94,25 +99,4 @@ public class dashboardActivity extends AppCompatActivity implements View.OnClick
     }
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu,menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
-            case  R.id.logoutMenu:{
-                Logout();
-            }
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
-
-    @Override
-    public void onClick(View view) {
-
-    }
 }

@@ -2,6 +2,7 @@ package com.example.seniordesignstockman;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Context;
 import android.content.Intent;
@@ -27,7 +28,7 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText editTextName, editTextEmail, editTextPassword, editTextPhone,editTextcPassword;
     public Button UserRegisterBtn;
     private ProgressBar progressBar;
-    private RelativeLayout relativeLayout;
+    private ConstraintLayout relativeLayout;
     private FirebaseAuth mAuth;
 
     @Override
