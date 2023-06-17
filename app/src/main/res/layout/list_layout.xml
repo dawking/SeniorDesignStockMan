@@ -17,13 +17,14 @@
         android:background="@drawable/bgtry"
         android:padding="5dp"
         >
+
         <TextView
             android:id="@+id/viewitembarcodename"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Barkod"
             android:textColor="#ffff"
-            android:textStyle="bold"
-            android:text="Item Barcode" />
+            android:textStyle="bold" />
 
 
         <TextView
@@ -38,12 +39,12 @@
 
         <TextView
             android:id="@+id/viewitemnamename"
-            android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Ürün Adı"
             android:textColor="#ffff"
-            android:textStyle="bold"
-            android:text="Item Name" />
+            android:textStyle="bold" />
 
 
         <TextView
@@ -59,12 +60,12 @@
 
         <TextView
             android:id="@+id/viewitempricename"
-            android:layout_marginTop="40dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Ürün Fiyatı"
             android:textColor="#ffff"
-            android:textStyle="bold"
-            android:text="Item Price $" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/viewitemprice"
@@ -79,12 +80,12 @@
 
         <TextView
             android:id="@+id/viewitemcategoryname"
-            android:layout_marginTop="60dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
+            android:layout_marginTop="60dp"
+            android:text="Ürün Sınıfı"
             android:textColor="#ffff"
-            android:text="Item Category" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/viewitemcategory"

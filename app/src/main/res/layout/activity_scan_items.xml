@@ -16,7 +16,7 @@
         android:layout_marginLeft="85dp"
         android:layout_marginTop="0dp"
         android:fontFamily="@font/opensansbold"
-        android:text="Scan Items"
+        android:text="Ürün Tara"
         android:textColor="#C1F8B0B0"
         android:textSize="45dp"
         android:textStyle="bold"
@@ -42,7 +42,7 @@
         android:background="#11AA9E9E"
         android:drawableLeft="@drawable/ic_search_black_24dp"
         android:ems="10"
-        android:hint="Search Items"
+        android:hint="Ürün ara"
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:textColor="#fff"
@@ -54,7 +54,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/searchbtnn"
         android:layout_marginLeft="150dp"
-        android:text="Search"
+        android:text="Ara"
+        android:background="@drawable/gradient"
         android:textColor="#F7F2F2"/>
 
 
