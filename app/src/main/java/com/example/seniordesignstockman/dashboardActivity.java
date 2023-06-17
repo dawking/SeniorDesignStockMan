@@ -38,13 +38,6 @@ public class dashboardActivity extends AppCompatActivity implements View.OnClick
         String result = finaluser.substring(0, finaluser.indexOf("@"));
         String resultemail = result.replace(".","");
         firebasenameview.setText("Hoş Geldiniz, "+  resultemail);
-//        toast.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Toast.makeText(dashboardActivity.this, users.getEmail(), Toast.LENGTH_SHORT).show();
-//            }
-//        });
-
         logout = findViewById(R.id.logoutimg);
         addItems = findViewById(R.id.addItems);
         deleteItems =  findViewById(R.id.deleteItems);
@@ -64,20 +57,11 @@ public class dashboardActivity extends AppCompatActivity implements View.OnClick
         if(view.findViewById(R.id.logoutimg) == view){Logout();
         }
         switch (view.getId()){
-             case R.id.addItems : i = new Intent(this,LoginActivity.class);
-                startActivity(i);
-                break;
-            case R.id.deleteItems : i = new Intent(this,LoginActivity.class);
-                startActivity(i);
-                break;
-            case R.id.scanItems : i = new Intent(this,LoginActivity.class);
-               startActivity(i);
-                break;
-            case R.id.viewInventory : i = new Intent(this,LoginActivity.class);
-                startActivity(i);
-                break;
-            default:
-                break;
+            case R.id.addItems : i = new Intent(this,additemActivity.class); startActivity(i); break;
+            case R.id.deleteItems : i = new Intent(this,deleteItemsActivity.class);startActivity(i); break;
+            case R.id.scanItems : i = new Intent(this,scanItemsActivity.class);startActivity(i); break;
+            case R.id.viewInventory : i = new Intent(this,viewInventoryActivity.class);startActivity(i); break;
+            default: break;
 
         }
 

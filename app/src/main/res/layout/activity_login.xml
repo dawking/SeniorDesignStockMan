@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
 
 
-        android:layout_marginBottom="128dp"
+        android:layout_marginBottom="146dp"
         android:background="@drawable/button"
         android:text="Giriş yap"
         android:textAlignment="center"
@@ -84,14 +84,15 @@
 
     <TextView
         android:id="@+id/forgotPassword"
-        android:layout_width="145dp"
-        android:layout_height="28dp"
+        android:layout_width="135dp"
+        android:layout_height="35dp"
 
 
         android:layout_marginBottom="48dp"
         android:background="@drawable/button"
         android:clickable="true"
         android:focusable="true"
+        android:gravity="center"
         android:minHeight="48dp"
         android:text="Parolamı Unuttum"
         android:textAlignment="center"

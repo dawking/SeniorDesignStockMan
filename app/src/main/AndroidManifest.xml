@@ -16,6 +16,27 @@
         android:theme="@style/Theme.SeniorDesignStockMan"
         tools:targetApi="31">
         <activity
+            android:name=".viewInventoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".scanItemsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScanCodeActivitysearch"
+            android:exported="false" />
+        <activity
+            android:name=".deleteItemsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScanCodeActivitydel"
+            android:exported="false" />
+        <activity
+            android:name=".ScanCodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".additemActivity"
+            android:exported="false" />
+        <activity
             android:name=".dashboardActivity"
             android:exported="false" />
         <activity
