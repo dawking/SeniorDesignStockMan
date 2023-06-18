@@ -22,7 +22,7 @@ public class dashboardActivity extends AppCompatActivity implements View.OnClick
 
 
     private ImageView addItems, deleteItems, scanItems, viewInventory, logout;
-
+    private Button chatActivity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,9 +43,10 @@ public class dashboardActivity extends AppCompatActivity implements View.OnClick
         deleteItems =  findViewById(R.id.deleteItems);
         scanItems =  findViewById(R.id.scanItems);
         viewInventory =  findViewById(R.id.viewInventory);
-
+        chatActivity = findViewById(R.id.chatActivity);
         addItems.setOnClickListener(this);
         deleteItems.setOnClickListener(this);
+        chatActivity.setOnClickListener(this);
         scanItems.setOnClickListener(this);
         viewInventory.setOnClickListener(this);
         logout.setOnClickListener(this);
@@ -61,6 +62,7 @@ public class dashboardActivity extends AppCompatActivity implements View.OnClick
             case R.id.deleteItems : i = new Intent(this,deleteItemsActivity.class);startActivity(i); break;
             case R.id.scanItems : i = new Intent(this,scanItemsActivity.class);startActivity(i); break;
             case R.id.viewInventory : i = new Intent(this,viewInventoryActivity.class);startActivity(i); break;
+            case R.id.chatActivity : i = new Intent(this, ChatActivity.class); startActivity(i); break;
             default: break;
 
         }

@@ -6,23 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".deleteItemsActivity"
     android:orientation="vertical"
-    android:background="@drawable/backgroundgradient">
+    android:background="@drawable/bgtry">
+
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="217dp"
         android:layout_height="156dp"
-        android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
-        android:fontFamily="@font/opensansbold"
         android:layout_marginLeft="85dp"
-        android:textColor="#C1F8B0B0"
-        android:text="Delete Items"
-        android:textSize="65dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/opensansbold"
+        android:text="Ürün Sil"
+        android:textColor="#EF6C00"
+        android:textSize="48sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="97dp"
         tools:layout_editor_absoluteY="16dp" />
-
 
     <TextView
         android:id="@+id/barcodedelete"
@@ -36,6 +36,7 @@
         android:inputType="textPersonName"
         android:textColor="#ffff"
         android:textColorHint="#ffff"
+        tools:ignore="TouchTargetSizeCheck"
         tools:layout_editor_absoluteX="114dp"
         tools:layout_editor_absoluteY="211dp" />
 
@@ -44,8 +45,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="325dp"
-        android:text="Item to Delete:"
-        android:textColor="#C1F8B0B0"
+        android:text="Silinecek ürün:"
+        android:textColor="#9E9D24"
         android:textSize="20dp"
         android:textStyle="bold" />
 
@@ -55,11 +56,13 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/barcodeview"
         android:layout_centerHorizontal="true"
-
         android:layout_marginTop="385dp"
+        android:background="@drawable/gradient"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Scan Bar/QR Code"
+        android:text="Bar/QR Kod Tara"
+        android:textColor="#166FD4"
+        android:textSize="20sp"
         android:textStyle="italic"
         tools:layout_editor_absoluteX="114dp"
         tools:layout_editor_absoluteY="211dp" />
@@ -70,11 +73,13 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/buttonscandelete"
         android:layout_centerHorizontal="true"
-
         android:layout_marginBottom="-70dp"
+        android:background="@drawable/gradient"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Delete Item"
+        android:text="SİL"
+        android:textColor="#DA1F1F"
+        android:textSize="20sp"
         tools:layout_editor_absoluteX="114dp"
         tools:layout_editor_absoluteY="211dp" />
 

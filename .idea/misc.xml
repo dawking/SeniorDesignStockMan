@@ -27,6 +27,7 @@
         <entry key="..\:/Users/Meric/AndroidStudioProjects/SeniorDesignStockMan/app/src/main/res/drawable/ic_vpn_key_black_24dp.xml" value="0.169" />
         <entry key="..\:/Users/Meric/AndroidStudioProjects/SeniorDesignStockMan/app/src/main/res/layout-v26/activity_login.xml" value="0.253125" />
         <entry key="..\:/Users/Meric/AndroidStudioProjects/SeniorDesignStockMan/app/src/main/res/layout/activity_additem.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Meric/AndroidStudioProjects/SeniorDesignStockMan/app/src/main/res/layout/activity_chat.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Meric/AndroidStudioProjects/SeniorDesignStockMan/app/src/main/res/layout/activity_dashboard.xml" value="0.264" />
         <entry key="..\:/Users/Meric/AndroidStudioProjects/SeniorDesignStockMan/app/src/main/res/layout/activity_delete_items.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Meric/AndroidStudioProjects/SeniorDesignStockMan/app/src/main/res/layout/activity_items.xml" value="0.23854166666666668" />
@@ -39,6 +40,7 @@
         <entry key="..\:/Users/Meric/AndroidStudioProjects/SeniorDesignStockMan/app/src/main/res/layout/activity_scan_code_activitysearch.xml" value="0.2328125" />
         <entry key="..\:/Users/Meric/AndroidStudioProjects/SeniorDesignStockMan/app/src/main/res/layout/activity_scan_items.xml" value="0.2328125" />
         <entry key="..\:/Users/Meric/AndroidStudioProjects/SeniorDesignStockMan/app/src/main/res/layout/activity_view_inventory.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Meric/AndroidStudioProjects/SeniorDesignStockMan/app/src/main/res/layout/item_message.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Meric/AndroidStudioProjects/SeniorDesignStockMan/app/src/main/res/layout/list_layout.xml" value="0.2" />
         <entry key="..\:/Users/Meric/AndroidStudioProjects/SeniorDesignStockMan/app/src/main/res/menu/menu.xml" value="0.18645833333333334" />
       </map>
