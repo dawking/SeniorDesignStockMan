@@ -10,15 +10,15 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="279dp"
-        android:layout_height="165dp"
+        android:layout_width="345dp"
+        android:layout_height="170dp"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="85dp"
         android:layout_marginTop="20dp"
 
         android:fontFamily="@font/opensansbold"
         android:text="Ürün Detayları"
-        android:textColor="#BD9A6D"
+        android:textColor="#BB3E39"
         android:textSize="50sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="97dp"
@@ -38,8 +38,8 @@
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textAlignment="center"
-        android:textColor="#ffff"
-        android:textColorHint="#ffff"
+        android:textColor="#4B2828"
+        android:textColorHint="#4B2828"
         tools:layout_editor_absoluteX="114dp"
         tools:layout_editor_absoluteY="211dp" />
 
@@ -52,13 +52,13 @@
         android:layout_marginBottom="-70dp"
         android:background="@drawable/gradient"
         android:ems="10"
+
         android:hint="Kategori"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textAlignment="center"
-        android:textColor="#ffff"
-
-        android:textColorHint="#ffff"
+        android:textColor="#4B2828"
+        android:textColorHint="#4B2828"
         tools:layout_editor_absoluteX="114dp"
         tools:layout_editor_absoluteY="211dp" />
 
@@ -72,11 +72,11 @@
         android:background="@drawable/gradient"
         android:ems="10"
         android:hint="Fiyat"
-        android:textAlignment="center"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:minHeight="48dp"
-        android:textColor="#ffff"
-        android:textColorHint="#ffff"
+        android:textAlignment="center"
+        android:textColor="#4B2828"
+        android:textColorHint="#4B2828"
         tools:layout_editor_absoluteX="114dp"
         tools:layout_editor_absoluteY="211dp" />
 

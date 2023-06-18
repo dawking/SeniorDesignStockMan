@@ -11,8 +11,8 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="217dp"
-        android:layout_height="156dp"
+        android:layout_width="363dp"
+        android:layout_height="151dp"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="85dp"
         android:layout_marginTop="20dp"
@@ -29,10 +29,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView"
+        android:layout_centerVertical="true"
         android:layout_marginLeft="175dp"
-        android:layout_marginBottom="-171dp"
+        android:layout_marginBottom="-176dp"
         android:ems="10"
-        android:hint="Code Number"
+        android:hint="Barkod numarası"
         android:inputType="textPersonName"
         android:textColor="#ffff"
         android:textColorHint="#ffff"
@@ -45,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="325dp"
-        android:text="Silinecek ürün:"
+        android:text="      Silinecek ürün:"
         android:textColor="#9E9D24"
         android:textSize="20dp"
         android:textStyle="bold" />

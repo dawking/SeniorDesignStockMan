@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".viewInventoryActivity"
     android:orientation="vertical"
-    android:background="@drawable/backgroundgradient">
+    android:background="@drawable/bgtry"
+    >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -35,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#FFFFFF"
-            android:text=" Toplam = TL "
+            android:text=" Toplam Tutar = TL "
             android:layout_marginLeft="30dp"
             android:textSize="20dp"
             android:textStyle="bold"

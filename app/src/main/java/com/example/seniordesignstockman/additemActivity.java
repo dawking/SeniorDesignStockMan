@@ -65,7 +65,7 @@ public class additemActivity extends AppCompatActivity {
     }
 
 
-    // addding item to databse
+    // addding item to database
     public  void additem(){
         String itemnameValue = itemname.getText().toString();
         String itemcategoryValue = itemcategory.getText().toString();

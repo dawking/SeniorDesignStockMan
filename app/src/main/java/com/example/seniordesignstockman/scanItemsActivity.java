@@ -26,15 +26,22 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 public class scanItemsActivity extends AppCompatActivity {
     public static EditText resultsearcheview;
     private FirebaseAuth firebaseAuth;
     ImageButton scantosearch;
     Button searchbtn;
+    Button takePictureButton;
     Adapter adapter;
     RecyclerView mrecyclerview;
     DatabaseReference mdatabaseReference;
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,12 +78,13 @@ public class scanItemsActivity extends AppCompatActivity {
                 firebasesearch(searchtext);
             }
         });
+
+
     }
     private void firebasesearch(String searchtext) {
 
-        // The startAt() and endAt() methods can be used to perform a basic query for data.
-        // The equalTo() method can also be used to look for exact matches.
-        // Firebase recommends indexing data for better query performance.
+
+
         Query firebaseSearchQuery = mdatabaseReference.orderByChild("itembarcode").startAt(searchtext).endAt(searchtext + "\uf8ff");
 
         FirebaseRecyclerOptions<Items> options = new FirebaseRecyclerOptions.Builder<Items>()

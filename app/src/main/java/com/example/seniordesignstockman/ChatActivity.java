@@ -1,5 +1,11 @@
 package com.example.seniordesignstockman;
 
+import android.annotation.SuppressLint;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -8,7 +14,10 @@ import android.widget.Button;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -35,6 +44,25 @@ public class ChatActivity extends AppCompatActivity {
     private MessageAdapter mAdapter;
     private RecyclerView mRecyclerView;
     private LinearLayoutManager mLinearLayoutManager;
+    @RequiresApi(api = Build.VERSION_CODES.M)
+    private void showNotification(String message, int notificationId) {
+        // dışta çalışan arayüz, beklemede
+        Intent intent = new Intent(this, ChatActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        intent.putExtra("message", message); // mesajı pasla
+        PendingIntent pendingIntent = PendingIntent.getActivity(this, notificationId, intent, PendingIntent.FLAG_IMMUTABLE);
+
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, "chat_channel")
+                .setSmallIcon(R.drawable.ic_account_user)
+                .setContentTitle("New message")
+                .setContentText(message)
+                .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+                .setContentIntent(pendingIntent)
+                .setAutoCancel(true);
+
+        NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
+        notificationManager.notify(notificationId, builder.build());
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,7 +84,15 @@ public class ChatActivity extends AppCompatActivity {
         mMessageRecyclerView.setAdapter(mAdapter);
 
         mAuth = FirebaseAuth.getInstance();
-
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            CharSequence name = "Chat notifications";
+            String description = "Notifications about new messages";
+            int importance = NotificationManager.IMPORTANCE_DEFAULT;
+            NotificationChannel channel = new NotificationChannel("chat_channel", name, importance);
+            channel.setDescription(description);
+            NotificationManager notificationManager = getSystemService(NotificationManager.class);
+            notificationManager.createNotificationChannel(channel);
+        }
         mSendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -83,6 +119,7 @@ public class ChatActivity extends AppCompatActivity {
             }
         });
         mChildEventListener = new ChildEventListener() {
+            @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, String s) {
                 HashMap<String, String> value = (HashMap<String, String>) dataSnapshot.getValue();
@@ -92,6 +129,9 @@ public class ChatActivity extends AppCompatActivity {
 
                 mAdapter.notifyDataSetChanged();
                 mRecyclerView.scrollToPosition(mMessageList.size() - 1);
+
+                int notificationId = (int) System.currentTimeMillis();
+                showNotification(message, notificationId);
             }
 
             @Override
